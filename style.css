@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+ background-color: #1F1F1F;
+ width: 100%;
+ position: fixed;
+}
+
+.container{
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    max-width: 1300px;
+    /* background-color: yellow; */
+}
+
+.logo_text{
+       text-shadow: 0px 10px 8px rgba(0,0,0,0.97);
+    font-family: 'Times New Roman', Times, serif;
+
+      /* font-family: "Roboto", sans-serif; */
+    text-decoration: none;
+    font-size: 33px;
+    letter-spacing: 8px;
+    font-weight: 1000;
+    color: #59C3F5;
+    /* background-color: red; */
+      text-transform: uppercase;
+      padding: 20px 0px;
+}
+
+.navbar{
+    display: flex;
+    gap: 10px;
+}
+/* .ancher{
+       color: white;
+    font-size: 20px;
+    text-decoration: none;
+} */
+
+.navbar > nav > a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    font-weight: 400;
+}   
+
+.navbar > nav > a:hover{
+    color: #1F1F1F;
+    background-color: white;
+}
+
+
+.hero{
+    min-height: 630px;
+    /* background-color: red; */
+    background-image: url("./imgs/developer.jpg");
+    background-size:cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.hero-special{
+    text-transform: capitalize;
+    
+}
+
+.hero-heading{
+          font-family: "Roboto", sans-serif;
+    font-size: 100px;
+    color: #fff;
+ text-shadow: 0px 10px 8px rgba(0,0,0,0.97);
+}
+
+.hero-subtext{
+    font-size: 30px;
+    color: #59C3F5;
+    letter-spacing: 8px;
+    padding: 20px;
+    text-shadow: 0px 10px 8px rgba(0,0,0,0.97);
+}
+
+
+.about{
+    min-height: 600px;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 80px 100px;
+}
+
+.about_content{
+    background-color: #fff;
+    padding: 40px;
+    height: 550px;
+    border-radius: 20px;
+
+    /* min-height: inherit; */
+}
+
+.about-left{
+    width: 49%;
+    height:100%;
+    /* background-color: yellow; */
+    float: left;
+    padding: 10px;
+    /* display: inline-block; */
+}
+.profile_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    float: left;
+}
+
+.intro{
+    padding: 30px 0px;
+    width: 360px;
+    float: right;
+}
+
+.intro > ul{
+    list-style: none;
+    line-height: 1.2;
+}
+
+.intro > ul > li{
+    font-size: 20px;
+}
+
+.intro > ul > li > strong{
+    margin-right: 10px;
+}
+
+
+
+.skills{
+    clear: both;
+    padding: 20px 10px;
+}
+
+.skills h3{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.skills > ul{
+    margin-top: 5px;
+    list-style: none;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+.about-right{
+    width: 49%;
+    height: fit-content;
+    height: 100%;
+    /* background-color: green; */
+    float: right;
+    padding: 30px;
+    /* display: inline-block; */
+}
+
+
+.about-right h3{
+    font-size: 36px;
+    margin: 5px 0px 30px 0px;
+}
+
+.about-right p{
+    font-size: 16px;
+    line-height: 1.4;
+    
+}
+
+
+/* ======= Services Section ====== */
+#services{
+    width: 100%;
+    padding: 0px 40px;
+    background-color: #F5F5F5;
+}
+#services .section-heading h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+#services .section-heading p{
+    text-align: center;
+    font-size: 16px;
+}
+
+#services .section-body{
+    background-color:#F5F5F5;
+    margin: 10px auto;
+    max-width: 1000px;
+    min-height: 600px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#services .section-body .card{
+    background-color:#8fd1ef;
+    padding: 15px;
+    min-height: 270px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#services .section-body .card .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border: 10px solid blue;
+    font-size: 30px;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    color: black;
+    transition: .3s all ease;
+}
+#services .section-body .card .icon:hover{
+    background-color:blue;
+    border: 10px solid white;
+    color: white;
+}
+
+
+#services .section-body .card .card-heading{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#services .section-body .card .card-body{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+/* ======= Services Section ====== */
