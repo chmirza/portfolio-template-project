@@ -5,6 +5,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 header{
  background-color: #1F1F1F;
@@ -358,6 +359,20 @@ header{
 }
 
 #portfolio_sec .container{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 40px;
+}
+#blog_sec{
+    min-height: 800px;
+    background-color: #F5F5F5;
+    padding: 60px 30px;
+}
+#blog_sec .container{
     margin-top: 20px;
     padding: 20px;
     display: flex;

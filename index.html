@@ -7,10 +7,6 @@
           content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="style.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
-
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
           integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -28,23 +24,25 @@
             <h2 class="logo_text"><a href="#"
                    class="logo_text">Portfolio</a></h2>
             <div class="navbar">
-                <nav><a href="#">Home</a></nav>
-                <nav><a href="#">About</a></nav>
-                <nav><a href="#">Services</a></nav>
-                <nav><a href="#">Work</a></nav>
-                <nav><a href="#">Blog</a></nav>
-                <nav><a href="#">Contact Us</a></nav>
+                <nav><a href="#home">Home</a></nav>
+                <nav><a href="#about">About</a></nav>
+                <nav><a href="#services">Services</a></nav>
+                <nav><a href="#portfolio_sec">Work</a></nav>
+                <nav><a href="#blog_sec">Blog</a></nav>
+                <nav><a href="#contact_us">Contact Us</a></nav>
             </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section id="home"
+             class="hero">
         <div class="overlay"></div>
         <h2 class="hero-heading">I am a <span class="hero-special">full stack developer</span></h2>
         <h4 class="hero-subtext">HTML | CSS | BootStrap | JavaScript | PHP | MySql</h4>
     </section>
 
-    <section class="about">
+    <section id="about"
+             class="about">
         <div class="about_content">
             <div class="about-left">
                 <img class="profile_img"
@@ -177,68 +175,132 @@
         </div>
         <div class="container">
             <div class="port_box">
-                <img src="./imgs/colors.jpg" alt="IMAGE">
+                <img src="./imgs/colors.jpg"
+                     alt="IMAGE">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="port_box">
-                <img src="./imgs/colors.jpg" alt="IMAGE">
+                <img src="./imgs/colors.jpg"
+                     alt="IMAGE">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="port_box">
-                <img src="./imgs/colors.jpg" alt="IMAGE">
+                <img src="./imgs/colors.jpg"
+                     alt="IMAGE">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="port_box">
-                <img src="./imgs/colors.jpg" alt="IMAGE">
+                <img src="./imgs/colors.jpg"
+                     alt="IMAGE">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="port_box">
-                <img src="./imgs/colors.jpg" alt="IMAGE">
+                <img src="./imgs/colors.jpg"
+                     alt="IMAGE">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="port_box">
-                <img src="./imgs/colors.jpg" alt="IMAGE">
+                <img src="./imgs/colors.jpg"
+                     alt="IMAGE">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
     </section>
     <section class="profile">
-        <img src="./imgs/profile.jpg" alt="" class="profile_image">
+        <img src="./imgs/profile.jpg"
+             alt=""
+             class="profile_image">
         <h3 class="profile_name">Xavi Alonson</h3>
-        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit magnam doloremque eligendi porro eius illum maiores aliquam accusamus quis?</p>
+        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit magnam
+            doloremque eligendi porro eius illum maiores aliquam accusamus quis?</p>
     </section>
 
 
     <!-- Blog section done by students -->
-
+    <section id="blog_sec">
+        <div class="port_heading">
+            <h2>Blogs</h2>
+            <p>Written by me</p>
+        </div>
+        <div class="container">
+            <div class="port_box">
+                <img src="./imgs/table.jpg"
+                     alt="IMAGE">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="port_box">
+                <img src="./imgs/table.jpg"
+                     alt="IMAGE">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="port_box">
+                <img src="./imgs/table.jpg"
+                     alt="IMAGE">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="port_box">
+                <img src="./imgs/table.jpg"
+                     alt="IMAGE">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="port_box">
+                <img src="./imgs/table.jpg"
+                     alt="IMAGE">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="port_box">
+                <img src="./imgs/travel.JPG"
+                     alt="IMAGE">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Form -->
-     <section id="contact_us">
+    <section id="contact_us">
         <div class="contact_container">
             <div class="left_form">
                 <form action="">
                     <h3>Send Message Us</h3>
 
-                    <input type="text" class="form-control" placeholder="Your Name" name="full_name">
-                    <input type="text" class="form-control" placeholder="Your Email" name="email">
-                    <input type="text" class="form-control" placeholder="Your Subject" name="subject">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Your Name"
+                           name="full_name">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Your Email"
+                           name="email">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Your Subject"
+                           name="subject">
 
-                    <textarea name="message" class="form-control" rows="10" placeholder="Your Message"></textarea>
+                    <textarea name="message"
+                              class="form-control"
+                              rows="10"
+                              placeholder="Your Message"></textarea>
 
-                    <button type="button" class="btn">Send Message</button>
+                    <button type="button"
+                            class="btn">Send Message</button>
                 </form>
             </div>
             <div class="right_about">
                 <h3>Get In Touch</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta at, quasi quae assumenda deserunt nemo quo. Exercitationem, vel delectus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta at, quasi quae assumenda
+                    deserunt nemo quo. Exercitationem, vel delectus! Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Labore, nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, excepturi!
+                </p>
                 <div class="contacts">
                     <p><i class="fa-solid fa-location-dot"></i> 329 WASHINGTON ST BOSTON, MA 02108</p>
-                    <p><i class="fa-solid fa-mobile-screen"></i> <a href="tel:(+92)557-0089732">(+92) 557-0089732</a></p>
-                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:contact@example.com8">contact@example.com8</a></p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> <a href="tel:(+92)557-0089732">(+92) 557-0089732</a>
+                    </p>
+                    <p><i class="fa-solid fa-envelope"></i><a
+                           href="mailto:contact@example.com8">contact@example.com8</a></p>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- Form -->
 
 </body>
