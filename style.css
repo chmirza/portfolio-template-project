@@ -7,6 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 header{
  background-color: #1F1F1F;
  width: 100%;
@@ -295,7 +296,7 @@ header{
 
 .counter_container{
     margin: 0px auto;
-    width: 1200px;
+    width: 100%;
     min-height: 400px;
     display: flex;
     justify-content: space-around;
@@ -543,3 +544,65 @@ transition: All .7s ease;
 }
 
 /* ==== Contact Us Form ==== */
+
+
+
+
+
+
+/* ===Media Queries=== */
+@media (max-width:768px){
+
+    header{
+        position:static;
+    }
+    .container{
+        flex-direction: column;
+    }
+   
+    .navbar{
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+
+    .navbar nav{
+        margin: 10px 0px;
+    }
+    .navbar nav a{
+        padding: 20px;
+    }
+
+    .counter_container{
+        flex-direction: column;
+    }
+
+
+    .hero-heading{
+        font-size: 30px;
+    }
+
+    .hero-subtext{
+        font-size: 18px;
+    }
+
+    .hero{
+        min-height: 400px;
+    }
+
+    #contact_us .contact_container{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #contact_us{
+        padding: 10px 0px;
+    }
+
+    .left_form, .right_about{
+        width: 100%;
+    }
+}
+
+@media (max-width:425px){
+
+}
